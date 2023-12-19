@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Nițu Marina">
+  <meta name="keywords" content="fitness, sala de sport, cardio">
+  <meta name="description"
+    content="PerfectGym este sala ideala oricarei persoane care urmareste o schimbare in viata lui. Pozitionata in Cluj, sala ofera trei antrenoare care te vor ajuta sa-ti indeplinesti idealul si pachete favorabile la abonamente">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    PerfectGym
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <style>
+    .navbar {
+      border: 10px dashed rgb(55, 23, 85);
+      background-color: rgb(222, 151, 222);
+
+    }
+
+    .carousel-inner .carousel-item {
+      height: 650px;
+    }
+
+    .carousel-inner img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel-example-fade-container {
+      position: relative;
+    }
+
+    .carousel-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .sala {
+      color: rgb(196, 47, 196);
+      font-family: Oswald;
+      font-weight: 400;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .sala a {
+      color: rgb(215, 11, 215);
+      font-size: 30px;
+      border: 2px solid;
+      padding: 2px 5px;
+      margin: 25px;
+      transition: all 0.5s;
+      border-radius: 10px;
+    }
+
+    .sala a:hover {
+      background-color: rgba(220, 126, 209, 0.482);
+    }
+
+    .sala p {
+      max-width: 850px;
+      margin: 25px auto;
+      margin-bottom: 50px;
+
+    }
+
+    footer {
+      background-color: rgb(222, 151, 222);
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      text-align: left;
+      margin: 0 auto;
+      gap: 10px;
+    }
+
+    div.Programare {
+      width: inherit;
+    }
+    div.PreFooter {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<div class="bg-primary bg-opacity-25 overflow-x-auto">
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo.png" alt="Logo" width="50" height="44" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Antrenori">Antrenori</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Abonamente">Abonamente</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Galerie">Galerie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="carousel-example-fade-container">
+      <div class="carousel-title p-2 text-center">
+        <div class="sala">
+          <h1>PerfectGym</h1>
+          <p> Sala noastră vă oferă confortul necesar .</p>
+          <a href="https://youtu.be/F7hQL0LRdGo?si=8lXo2_9Ux7TussB0">
+            EAT.TRAIN.SLEEP.REPEAT
+          </a>
+        </div>
+      </div>
+      <div id="carouselExampleFade" class="carousel slide  d-block carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+
+            <img src="./background3.jpg" class="d-block w-100" alt="3 antrenoare care râd">
+          </div>
+          <div class="carousel-item ">
+
+            <img src="./carusel1.jpg" class="d-block w-100" alt="2 bărbți care aleargă">
+          </div>
+          <div class="carousel-item ">
+
+            <img src="./background.jpg" class="d-block w-100" alt="fată blondă care se uită în oglindă ">
+          </div>
+          <div class="carousel-item ">
+
+            <img src="./background4.jpg" class="d-block w-100" alt="echipamente sportive">
+          </div>
+          <div class="carousel-item ">
+
+            <img src="./carusel2.jpg" class="d-block w-100" alt="fată blondă care stă întinsă pe covor de yoga">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <h2 class="fw-bold pt-3 m-3">Despre noi</h2>
+  <p class="p-2 m-1 fs-5">
+    Misiunea noastră este să inspirăm și să ghidăm comunitatea noastră spre un stil de viață sănătos. Indiferent dacă
+    ești un începător entuziast sau un atlet experimentat, avem facilitățile și resursele pentru a te ajuta să-ți atingi
+    potențialul maxim. Ne mândrim cu spațiul nostru curat, bine întreținut și prietenos, creat special pentru a-ți oferi
+    o experiență plăcută și motivantă în fiecare vizită. În plus, ne străduim să dezvoltăm și să menținem o comunitate
+    activă și implicată, unde membrii noștri se simt parte dintr-o familie dedicată sănătății și dezvoltării personale.
+  </p>
+  <h2 class="fw-bold pt-3 m-3" id="Antrenori"> Antrenori</h2>
+  <p class="p-2 m-1 fs-5">
+    Echipa noastră de antrenori profesioniști este aici pentru a te ghida, a te motiva și a-ți oferi suportul necesar în
+    fiecare etapă a călătoriei tale fitness.
+  </p>
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./antrenor6.jpg" class="card-img-top" alt="fată brunetă cu părul în coadă">
+          <div class="card-body">
+            <h3 class="card-title text-center">Iuliana P.</h3>
+            <p class="card-text"> "Nu te compara cu alții, compară-te cu persoana în care ai fost ieri. <br>
+              Un corp sănătos înseamnă o minte săanătoasă și asta te voi ajuta să obții!"</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./antrenor4.jpg" class="card-img-top" alt="fată blondă care face yoga">
+          <div class="card-body">
+            <h3 class="card-title text-center">Liliana D.</h3>
+            <span class="badge bg-danger">Antrenorul lunii</span>
+            <p class="card-text">" Fiecare efort are recompensele sale. Dacă ai pasiunea pentru ceva, poți obține orice.
+              <br>
+              Îmi pasă de clienții mei și de sănătatea lor!"
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./antrenor3.jpg" class="card-img-top" alt="">
+          <div class="card-body">
+            <h3 class="card-title text-center"> Cristina H. </h3>
+            <p class="card-text">"Odată ce înveți cum să câștigi, devine un obicei. Nu conta cât de lent mergi, contează
+              că nu te oprești niciodată." <br>
+              Te voi face un campion și vei reuși imposibilul!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="fw-bold pt-3 m-3" id="Abonamente"> Abonamente</h2>
+  <p>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item bg-primary bg-opacity-25">
+      <h3 class="accordion-header ">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Abonament Clasic
+        </button>
+      </h3>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <ul>
+            <li>
+              o lună - 299 lei
+            </li>
+            <li>
+              3 luni - 449 lei
+            </li>
+            <li>
+              6 luni - 999 lei
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item bg-primary bg-opacity-25">
+      <h3 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Abonament Premium (+cardio)
+        </button>
+      </h3>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <ul>
+            <li>
+              o lună - 399 lei
+            </li>
+            <li>
+              3 luni - 549 lei
+            </li>
+            <li>
+              6 luni - 1100 lei
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="accordion-item bg-primary bg-opacity-25">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Abonament ofertă
+          </button>
+        </h3>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body ">
+            <ul>
+              <li>
+                O intrare la piscină și o intrare la sală. - 300 lei
+              </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="fw-bold pt-4 m-3">Antrenamente de grup</h2>
+    <p class="p-2 m-1 fs-5">
+      Un antrenament bine structurat are de obicei un echilibru între exercițiile pentru diferite grupuri musculare sau
+      aspecte ale fitnessului, precum și între intensitatea și durata exercițiilor. <br>
+      Variind de la antrenamente intense de scurtă durată până la sesiuni mai lungi și mai moderate, este important să
+      găsești un echilibru care să se potrivească obiectivelor tale și nivelului tău de fitness.
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./poza1.jpg" class="card-img-top" alt="fete care stau pe jos intr-o sală de yoga">
+            <div class="card-body">
+              <h3 class="card-title text-center">Yoga și pilates în grup</h3>
+              <p class="card-text"> Sunt antrenamente axate pe flexibilitate, echilibru, controlul respirației și
+                tonifierea mușchilor.<br>
+                Ele pot fi adaptate pentru toate nivelurile de fitness.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./poza2.jpg" class="card-img-top" alt="3 femei cu gantere pe mingi">
+            <div class="card-body">
+              <h3 class="card-title text-center"> Fitness în grup</h3>
+              <span class="badge bg-danger"> O dată pe lună clasa</span>
+              <p class="card-text"> Antrenamente cu clase de aerobic, de forță sau sesiuni care combină multe tipuri de
+                exerciții, perfecte pentru orice tip de persoană.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./antrenor3.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3 class="card-title text-center"> Bootcamp-uri </h3>
+              <p class="card-text">Antrenamente intensive care combină exerciții variate de forță, cardio și rezistență,
+                realizate în aer liber. Aceste antrenamente în grup aduc beneficii cum ar fi motivarea crescută. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </p>
+    <h2 class="fw-bold pt-3 pb-3 m-3" id="Galerie"> Galerie</h2>
+    <div class="container">
+      <div class="row text-center text-lg-start">
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="./galerie1.jpg" alt="trei femei în poziție de yoga">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="./galerie2.jpg" alt="femei care fac poziții de yoga">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="./galerie4.jpg" alt="bărbat care face genoflexiuni cu greutăți">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="./galerie5.jpg " alt="sală de yoga cu un om care stă cu spatele">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="./galerie6.jpg"
+              alt="femeie blondă care face exerciții sport pe saltea de yoga">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="./galerie7.jpg" alt="două femei care stau cu spatele">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="./galerie8.jpg" alt="fete care stau în poziții de yoga">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="./galerie9.jpg" alt="gantere">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="./galerie10.jpg" alt="3 femei care fac poziții de yoga">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="./galerie11.jpg" alt="femeie care face o poziție de yoga">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="./galerie12.jpg" alt="fată care stă într-o poziție de yoga">
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6">
+          <div class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="./galerie13.jpg"
+              alt="bărbat care se pregătește să alerge la maraton">
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="fw-bold pt-3 m-3" id="Contact"> Contact</h2>
+    <div class="PreFooter">
+      <div class="Programare">
+        <hr>
+        <h2>
+          Programează-te la sală!
+        </h2>
+        <div class="ProgramareForm">
+          <form>
+            <label>
+              Nume
+            </label>
+            <input type="text" placeholder="Nume">
+            <label>
+              Dată
+            </label>
+            <input type="datetime-local" placeholder="Dată">
+            <label>
+              <input type="checkbox"> Sunt de acord cu prelucrarea datelor mele.
+            </label>
+            <button>
+              Confirmă
+            </button>
+
+
+          </form>
+        </div>
+      </div>
+      <div class="Programare">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.4778242899893!2d23.6227583758766!3d46.775188245020594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c14c09305c9%3A0xe3586e56c11ab37d!2s%C3%8Entre%20Lacuri%2C%20Cluj-Napoca%20400394!5e0!3m2!1sro!2sro!4v1699888297273!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <hr>
+
+    <footer class="p-3 w-100">
+
+      <p>&copy; PerfectGYM
+        Orar :
+        7:30 - 23:00
+      </p>
+      <p>
+        Nr. de telefon : <a href="tel:07xxxxxxxx">07xxxxxxxx</a>
+      </p>
+      <p>
+        mail :
+        <a href="mailto:PerfectGym@gmail.com"> PerfectGym@gmail.com</a>
+      </p>
+      <a href="djjdnd" target="_blank"> <img src="" alt></a>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    </body>
+
+</html>
